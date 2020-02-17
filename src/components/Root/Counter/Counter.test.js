@@ -7,7 +7,7 @@ test("Counter component works properly", () => {
   const { getByTestId, getByText } = render(<Counter />);
 
   const counterValueEl = getByTestId("counter-value");
-  const minusTwoButtonEl = getByText("sample", { selector: "button" });
+  const minusTwoButtonEl = getByText("-9", { selector: "button" });
   const minusOneButtonEl = getByText("-1", { selector: "button" });
   const plusOneButtonEl = getByText("+1", { selector: "button" });
   const plusTwoButtonEl = getByText("+2", { selector: "button" });
